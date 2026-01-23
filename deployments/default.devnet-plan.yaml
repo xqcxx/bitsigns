@@ -1,16 +1,16 @@
 ---
 id: 0
-name: Mainnet deployment
-network: mainnet
-stacks-node: "https://api.hiro.so"
-bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+name: Devnet deployment
+network: devnet
+stacks-node: "http://localhost:20443"
+bitcoin-node: "http://devnet:devnet@localhost:18443"
 plan:
   batches:
     - id: 0
       transactions:
         - contract-publish:
             contract-name: treasury
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 16970
             path: contracts/treasury.clar
             anchor-block-only: true
@@ -20,56 +20,56 @@ plan:
       transactions:
         - contract-publish:
             contract-name: nft-trait
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 4670
             path: contracts/nft-trait.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
             contract-name: bitsign-nft
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 28310
             path: contracts/bitsign-nft.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
             contract-name: compatibility
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 46050
             path: contracts/compatibility.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
             contract-name: fortune-oracle
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 27640
             path: contracts/fortune-oracle.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
             contract-name: sip013-trait
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 4350
             path: contracts/sip013-trait.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
             contract-name: trait-engine
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 42530
             path: contracts/trait-engine.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
             contract-name: trait-engine-trait
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 2990
             path: contracts/trait-engine-trait.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
             contract-name: trait-token
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             cost: 43570
             path: contracts/trait-token.clar
             anchor-block-only: true
