@@ -1,0 +1,74 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://api.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: nft-trait
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 735491
+            path: contracts/nft-trait.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: bitsign-nft
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 735852
+            path: contracts/bitsign-nft.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: trait-engine-trait
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 735461
+            path: contracts/trait-engine-trait.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: compatibility
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 735912
+            path: contracts/compatibility.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: fortune-oracle
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 735822
+            path: contracts/fortune-oracle.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: sip013-trait
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 735491
+            path: contracts/sip013-trait.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: trait-engine
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 736062
+            path: contracts/trait-engine.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: trait-token
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 736032
+            path: contracts/trait-token.clar
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
+            contract-name: treasury
+            expected-sender: SP1JAHE8GEHB0MCBGR8J6W0AA7TJEE1XKFTFJMQ5W
+            cost: 735671
+            path: contracts/treasury.clar
+            anchor-block-only: true
+            clarity-version: 2
+      epoch: "3.3"

@@ -5,6 +5,7 @@ authors = ['man-croft']
 telemetry = true
 cache_dir = './.cache'
 requirements = []
+
 [contracts.nft-trait]
 path = 'contracts/nft-trait.clar'
 clarity_version = 4
@@ -12,21 +13,6 @@ epoch = 'latest'
 
 [contracts.sip013-trait]
 path = 'contracts/sip013-trait.clar'
-clarity_version = 4
-epoch = 'latest'
-
-[contracts.bitsign-nft]
-path = 'contracts/bitsign-nft.clar'
-clarity_version = 4
-epoch = 'latest'
-
-[contracts.compatibility]
-path = 'contracts/compatibility.clar'
-clarity_version = 4
-epoch = 'latest'
-
-[contracts.fortune-oracle]
-path = 'contracts/fortune-oracle.clar'
 clarity_version = 4
 epoch = 'latest'
 
@@ -40,15 +26,31 @@ path = 'contracts/trait-engine.clar'
 clarity_version = 4
 epoch = 'latest'
 
+[contracts.bitsign-nft]
+path = 'contracts/bitsign-nft.clar'
+clarity_version = 4
+epoch = 'latest'
+
 [contracts.trait-token]
 path = 'contracts/trait-token.clar'
 clarity_version = 2
+epoch = 'latest'
+
+[contracts.compatibility]
+path = 'contracts/compatibility.clar'
+clarity_version = 4
+epoch = 'latest'
+
+[contracts.fortune-oracle]
+path = 'contracts/fortune-oracle.clar'
+clarity_version = 4
 epoch = 'latest'
 
 [contracts.treasury]
 path = 'contracts/treasury.clar'
 clarity_version = 2
 epoch = 'latest'
+
 [repl.analysis]
 passes = [
     'check_checker',
