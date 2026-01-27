@@ -1,0 +1,21 @@
+{
+  "chain": "stacks",
+  "uuid": "bitsigns-mint-monitor",
+  "name": "BitSigns Mint Monitor",
+  "version": 1,
+  "networks": {
+    "mainnet": {
+      "if_this": {
+        "scope": "contract_call",
+        "contract_identifier": "SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3.bitsign-nft",
+        "method": "mint"
+      },
+      "then_that": {
+        "http_post": {
+          "url": "https://bitsigns.xyz/api/webhooks/chainhook",
+          "authorization_header": "Bearer ${CHAINHOOK_SECRET}"
+        }
+      }
+    }
+  }
+}

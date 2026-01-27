@@ -22,6 +22,7 @@
 
 (define-map token-birth-blocks uint uint)
 (define-map token-image-uris uint (string-ascii 200))
+(define-map token-uris uint (string-ascii 256))
 (define-map user-has-minted principal bool)
 
 (define-read-only (get-last-token-id)
@@ -29,7 +30,10 @@
 )
 
 (define-read-only (get-token-uri (token-id uint))
-  (ok (some (concat (var-get base-uri) (concat (int-to-ascii token-id) ".json"))))
+  (match (map-get? token-uris token-id)
+    uri (ok (some uri))
+    (ok (some (concat (var-get base-uri) (concat (int-to-ascii token-id) ".json"))))
+  )
 )
 
 (define-read-only (get-owner (token-id uint))
@@ -56,9 +60,10 @@
   )
 )
 
-(define-public (set-token-image (token-id uint) (image-uri (string-ascii 200)))
+(define-public (set-token-content (token-id uint) (uri (string-ascii 256)) (image-uri (string-ascii 200)))
   (begin
     (asserts! (is-eq tx-sender CONTRACT_OWNER) ERR_NOT_OWNER)
+    (map-set token-uris token-id uri)
     (map-set token-image-uris token-id image-uri)
     (ok true)
   )
