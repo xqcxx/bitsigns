@@ -12,6 +12,8 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Zap, Droplets, Wind, Mountain, Sparkles, Hash, Clover, Loader2, RefreshCw } from "lucide-react";
 import Image from "next/image";
+import { DownloadButton } from "./download-button";
+import { ShareButton } from "./share-button";
 
 // Simple Badge component if not exists
 function SimpleBadge({ children, className }: { children: React.ReactNode, className?: string }) {
@@ -173,10 +175,6 @@ export function ProfileView() {
       <div className="h-32 bg-gradient-to-r from-primary/20 to-accent/20 w-full" />
       <div className="px-8 pb-8">
         <div className="relative -mt-16 mb-6">
-import { DownloadButton } from "./download-button";
-
-// ... inside the image rendering part ...
-
             <div className="h-32 w-32 rounded-full border-4 border-white bg-secondary flex items-center justify-center overflow-hidden relative shadow-2xl group">
                 {imageUri ? (
                     <>
@@ -207,10 +205,6 @@ import { DownloadButton } from "./download-button";
                 </h2>
                 <p className="text-muted-foreground font-body text-lg">{address.slice(0, 6)}...{address.slice(-4)}</p>
             </div>
-import { ShareButton } from "./share-button";
-
-// ... inside ProfileView, after the tokenId rendering ...
-
             <div className="flex gap-2">
                 <Link href="/fortune">
                     <Button variant="outline" className="rounded-full border-2 border-primary/20 hover:border-primary text-primary hover:bg-primary hover:text-white transition-all">

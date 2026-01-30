@@ -10,6 +10,7 @@ import { APP_CONFIG, CONTRACTS, MINT_PRICE } from "@/lib/constants";
 import { parseContractId } from "@/lib/utils";
 import { uintCV } from "@stacks/transactions";
 import { Loader2, Pickaxe } from "lucide-react";
+import { toast } from "sonner";
 
 export function MintForm() {
   const { isConnected, connect, address } = useWallet();
@@ -40,10 +41,6 @@ export function MintForm() {
     setBirthDate(e.target.value);
     calculateBlockHeight(e.target.value);
   };
-
-import { toast } from "sonner";
-
-// ...
 
   const handleMint = async () => {
     if (!blockHeight) return;

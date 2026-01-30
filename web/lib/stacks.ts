@@ -31,6 +31,8 @@ export async function readContract(
     senderAddress,
   });
 
+  return cvToJSON(result);
+}
 
 export async function getRecentMints(contractAddress: string, limit: number = 20) {
   try {
