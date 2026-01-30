@@ -166,14 +166,23 @@ export function ProfileView() {
       <div className="h-32 bg-gradient-to-r from-primary/20 to-accent/20 w-full" />
       <div className="px-8 pb-8">
         <div className="relative -mt-16 mb-6">
-            <div className="h-32 w-32 rounded-full border-4 border-white bg-secondary flex items-center justify-center overflow-hidden relative shadow-2xl">
+import { DownloadButton } from "./download-button";
+
+// ... inside the image rendering part ...
+
+            <div className="h-32 w-32 rounded-full border-4 border-white bg-secondary flex items-center justify-center overflow-hidden relative shadow-2xl group">
                 {imageUri ? (
-                    <Image 
-                        src={imageUri} 
-                        alt={traits.bitsign} 
-                        fill 
-                        className="object-cover"
-                    />
+                    <>
+                        <Image 
+                            src={imageUri} 
+                            alt={traits.bitsign} 
+                            fill 
+                            className="object-cover"
+                        />
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <DownloadButton imageUri={imageUri} fileName={`bitsign-${tokenId}.png`} />
+                        </div>
+                    </>
                 ) : (
                     <div className="flex flex-col items-center justify-center text-muted-foreground bg-secondary w-full h-full">
                         <Loader2 className="h-8 w-8 animate-spin mb-1" />
