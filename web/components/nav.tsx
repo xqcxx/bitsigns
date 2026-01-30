@@ -13,6 +13,7 @@ export function Nav() {
     { href: "/", label: "Home" },
     { href: "/mint", label: "Mint" },
     { href: "/profile", label: "Profile" },
+    { href: "/gallery", label: "Gallery" },
     { href: "/fortune", label: "Fortune" },
     { href: "/compatibility", label: "Compatibility" },
   ];
