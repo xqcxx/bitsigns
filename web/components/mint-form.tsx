@@ -41,6 +41,10 @@ export function MintForm() {
     calculateBlockHeight(e.target.value);
   };
 
+import { toast } from "sonner";
+
+// ...
+
   const handleMint = async () => {
     if (!blockHeight) return;
 
@@ -60,12 +64,20 @@ export function MintForm() {
       });
 
       if (response && response.txid) {
-          console.log("Transaction ID:", response.txid);
-          window.open(`https://explorer.hiro.so/txid/${response.txid}?chain=mainnet`, "_blank");
+          toast.success("Mint transaction broadcasted!", {
+            description: "Your BitSign is being forged on the blockchain. Check the explorer.",
+            action: {
+                label: "View Explorer",
+                onClick: () => window.open(`https://explorer.hiro.so/txid/${response.txid}?chain=mainnet`, "_blank")
+            }
+          });
       }
 
     } catch (e) {
       console.error("Mint failed:", e);
+      toast.error("Minting failed", {
+        description: "Please check your wallet connection and try again."
+      });
     }
   };
 

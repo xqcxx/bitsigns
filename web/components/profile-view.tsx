@@ -122,15 +122,22 @@ export function ProfileView() {
 
   if (loading || !checked) {
     return (
-      <Card className="w-full max-w-md mx-auto">
-        <CardHeader>
-          <div className="h-8 w-48 bg-muted animate-pulse rounded" />
-        </CardHeader>
-        <CardContent className="space-y-4">
-            <div className="h-4 w-full bg-muted animate-pulse rounded" />
-            <div className="h-4 w-3/4 bg-muted animate-pulse rounded" />
-            <div className="h-32 w-full bg-muted animate-pulse rounded" />
-        </CardContent>
+      <Card className="w-full max-w-2xl mx-auto overflow-hidden bg-white/50 border-none shadow-none">
+        <div className="h-32 bg-muted animate-pulse w-full" />
+        <div className="px-8 pb-8">
+            <div className="relative -mt-16 mb-6 flex justify-center">
+                <div className="h-32 w-32 rounded-full bg-muted border-4 border-white animate-pulse" />
+            </div>
+            <div className="space-y-4">
+                <div className="h-8 w-48 bg-muted animate-pulse rounded mx-auto" />
+                <div className="h-4 w-32 bg-muted animate-pulse rounded mx-auto" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="h-24 bg-muted animate-pulse rounded-2xl" />
+                ))}
+            </div>
+        </div>
       </Card>
     );
   }
