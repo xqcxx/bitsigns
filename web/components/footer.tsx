@@ -1,3 +1,6 @@
+import { Badge } from "@/components/ui/badge";
+import { APP_CONFIG } from "@/lib/constants";
+
 export function Footer() {
   return (
     <footer className="w-full py-12 text-center text-muted-foreground">
@@ -20,9 +23,12 @@ export function Footer() {
             Twitter
           </a>
         </div>
-        <p className="text-sm opacity-60">
+        <p className="text-sm opacity-60 mb-4">
           &copy; {new Date().getFullYear()} BitSigns. Solar-powered destiny on Stacks.
         </p>
+        <Badge variant="outline" className="text-xs border-muted-foreground/30 text-muted-foreground">
+          {APP_CONFIG.NETWORK === 'mainnet' ? '● Mainnet' : '○ Testnet'}
+        </Badge>
       </div>
     </footer>
   );
