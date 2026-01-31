@@ -18,6 +18,12 @@ const bodyFont = Patrick_Hand({
 export const metadata: Metadata = {
   title: "BitSigns | Bitcoin Astrology",
   description: "Your Bitcoin birthday reveals your destiny. Mint your BitSign avatar.",
+  keywords: ["Bitcoin", "Stacks", "NFT", "Astrology", "AI Art", "Generative Art", "BitSigns"],
+  authors: [{ name: "BitSigns Team" }],
+  metadataBase: new URL("https://bitsigns.xyz"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "BitSigns | Bitcoin Astrology",
     description: "Discover your Bitcoin elemental sign and mint your unique AI avatar.",
