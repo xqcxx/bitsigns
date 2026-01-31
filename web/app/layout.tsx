@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Comfortaa, Patrick_Hand } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
+import { Analytics } from "@vercel/analytics/react";
 
 const headingFont = Comfortaa({
   variable: "--font-heading",
@@ -60,6 +61,7 @@ export default function RootLayout({
       >
         <Providers>
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
