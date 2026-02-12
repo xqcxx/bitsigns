@@ -5,3 +5,4 @@
 // Accessibility improvement step 5
 // Accessibility improvement step 6
 // Accessibility improvement step 7
+// Accessibility improvement step 8
