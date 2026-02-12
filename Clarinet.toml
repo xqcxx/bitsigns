@@ -6,47 +6,47 @@ telemetry = true
 cache_dir = './.cache'
 requirements = []
 
-[contracts.nft-trait]
+[contracts.nft-trait-v1]
 path = 'contracts/nft-trait.clar'
 clarity_version = 4
 epoch = 'latest'
 
-[contracts.sip013-trait]
+[contracts.sip013-trait-v1]
 path = 'contracts/sip013-trait.clar'
 clarity_version = 4
 epoch = 'latest'
 
-[contracts.trait-engine-trait]
+[contracts.trait-engine-trait-v1]
 path = 'contracts/trait-engine-trait.clar'
 clarity_version = 4
 epoch = 'latest'
 
-[contracts.trait-engine]
+[contracts.trait-engine-v1]
 path = 'contracts/trait-engine.clar'
 clarity_version = 4
 epoch = 'latest'
 
-[contracts.bitsign-nft]
+[contracts.bitsign-nft-v1]
 path = 'contracts/bitsign-nft.clar'
 clarity_version = 4
 epoch = 'latest'
 
-[contracts.trait-token]
+[contracts.trait-token-v1]
 path = 'contracts/trait-token.clar'
 clarity_version = 4
 epoch = 'latest'
 
-[contracts.compatibility]
+[contracts.compatibility-v1]
 path = 'contracts/compatibility.clar'
 clarity_version = 4
 epoch = 'latest'
 
-[contracts.fortune-oracle]
+[contracts.fortune-oracle-v1]
 path = 'contracts/fortune-oracle.clar'
 clarity_version = 4
 epoch = 'latest'
 
-[contracts.treasury]
+[contracts.treasury-v1]
 path = 'contracts/treasury.clar'
 clarity_version = 2
 epoch = '2.5'

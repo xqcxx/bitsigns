@@ -9,7 +9,7 @@ plan:
     - id: 0
       transactions:
         - contract-publish:
-            contract-name: treasury
+            contract-name: treasury-v1
             expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
             cost: 16970
             path: contracts/treasury.clar
@@ -19,56 +19,56 @@ plan:
     - id: 1
       transactions:
         - contract-publish:
-            contract-name: nft-trait
+            contract-name: bitsign-nft-v1
             expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
-            cost: 4670
-            path: contracts/nft-trait.clar
-            anchor-block-only: true
-            clarity-version: 4
-        - contract-publish:
-            contract-name: bitsign-nft
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
-            cost: 28310
+            cost: 30140
             path: contracts/bitsign-nft.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
-            contract-name: compatibility
+            contract-name: compatibility-v1
             expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
             cost: 46050
             path: contracts/compatibility.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
-            contract-name: fortune-oracle
+            contract-name: fortune-oracle-v1
             expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
             cost: 27640
             path: contracts/fortune-oracle.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
-            contract-name: sip013-trait
+            contract-name: nft-trait-v1
+            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            cost: 4670
+            path: contracts/nft-trait.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: sip013-trait-v1
             expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
             cost: 4350
             path: contracts/sip013-trait.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
-            contract-name: trait-engine
-            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
-            cost: 42530
-            path: contracts/trait-engine.clar
-            anchor-block-only: true
-            clarity-version: 4
-        - contract-publish:
-            contract-name: trait-engine-trait
+            contract-name: trait-engine-trait-v1
             expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
             cost: 2990
             path: contracts/trait-engine-trait.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
-            contract-name: trait-token
+            contract-name: trait-engine-v1
+            expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
+            cost: 42530
+            path: contracts/trait-engine.clar
+            anchor-block-only: true
+            clarity-version: 4
+        - contract-publish:
+            contract-name: trait-token-v1
             expected-sender: SPZ5Q1C2GVSMCWS9NWVDEKHNW04THC75SCQM99B3
             cost: 43570
             path: contracts/trait-token.clar
