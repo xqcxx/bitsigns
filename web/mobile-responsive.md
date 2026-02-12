@@ -13,3 +13,4 @@
 // Mobile responsive improvement step 13
 // Mobile responsive improvement step 14
 // Mobile responsive improvement step 15
+// Mobile responsive improvement step 16
