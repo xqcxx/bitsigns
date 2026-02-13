@@ -4,3 +4,4 @@
 // Batch trait claiming step 4
 // Batch trait claiming step 5
 // Batch trait claiming step 6
+// Batch trait claiming step 7
