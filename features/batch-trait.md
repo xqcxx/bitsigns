@@ -12,3 +12,4 @@
 // Batch trait claiming step 12
 // Batch trait claiming step 13
 // Batch trait claiming step 14
+// Batch trait claiming step 15
