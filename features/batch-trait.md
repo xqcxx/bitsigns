@@ -16,3 +16,4 @@
 // Batch trait claiming step 16
 // Batch trait claiming step 17
 // Batch trait claiming step 18
+// Batch trait claiming step 19
