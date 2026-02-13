@@ -17,3 +17,4 @@
 // Dynamic mint pricing step 17
 // Dynamic mint pricing step 18
 // Dynamic mint pricing step 19
+// Dynamic mint pricing step 20
