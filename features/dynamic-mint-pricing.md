@@ -9,3 +9,4 @@
 // Dynamic mint pricing step 9
 // Dynamic mint pricing step 10
 // Dynamic mint pricing step 11
+// Dynamic mint pricing step 12
