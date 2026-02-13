@@ -17,3 +17,4 @@
 // Gallery pagination and search step 17
 // Gallery pagination and search step 18
 // Gallery pagination and search step 19
+// Gallery pagination and search step 20
