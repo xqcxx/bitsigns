@@ -4,3 +4,4 @@
 // Gallery pagination and search step 4
 // Gallery pagination and search step 5
 // Gallery pagination and search step 6
+// Gallery pagination and search step 7
