@@ -12,3 +12,4 @@
 // Accessibility WCAG step 12
 // Accessibility WCAG step 13
 // Accessibility WCAG step 14
+// Accessibility WCAG step 15
