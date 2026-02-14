@@ -5,3 +5,4 @@
 // Accessibility WCAG step 5
 // Accessibility WCAG step 6
 // Accessibility WCAG step 7
+// Accessibility WCAG step 8
