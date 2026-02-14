@@ -7,3 +7,4 @@
 // Accessibility WCAG step 7
 // Accessibility WCAG step 8
 // Accessibility WCAG step 9
+// Accessibility WCAG step 10
